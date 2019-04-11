@@ -37,7 +37,7 @@ for page in range(1, 10):
 		link = "https://www.skroutz.gr" + link 
 		#print(link)
 		rating = details.div.a.div.span.text
-	    #print(rating)
+	    	#print(rating)
 		brand = details.h2.a["title"].partition(" ")[0]
 		#print(brand)
 		print(title)
