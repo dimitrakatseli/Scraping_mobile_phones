@@ -46,7 +46,7 @@ for page in range(1, 10):
 		print(brand)
 		f.write(title + "," +brand + "," +link +","       +rating.replace(",",".") +"\n")
 
-	
+	time.sleep(10)
 	print(my_url)
  
 f.close()  
