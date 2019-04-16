@@ -17,3 +17,5 @@ python3 skroutz_reviews.py
 Example review
 ![review](https://user-images.githubusercontent.com/22845560/56246800-b1318f00-60ab-11e9-8be6-d5dfbd7f5ad5.png)
 
+Results on csv
+![ex2](https://user-images.githubusercontent.com/22845560/56247001-1ab19d80-60ac-11e9-8e6e-91945f09b272.png)
