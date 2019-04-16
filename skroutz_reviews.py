@@ -6,8 +6,8 @@ import csv
 filename = "mobile_phones.csv"
 file_review = "mobile_phones_review.csv"
 #create save file
-f = open(file_review,"a")
-headers = "title,brand,star,review"
+f = open(file_review,"w")
+headers = "title\tbrand\tstar\treview"
 f.write(headers +"\n")
 sum=0
 
@@ -19,7 +19,9 @@ with open(filename,'r') as csv_file:
 		title = row['title']
 		brand = row[' brand']
 		link = row[' link']
-
+		rating = row[' rating']
+		if(rating == "0.0"):
+			continue
 		link = link + "#reviews"
 
 		my_url = link
@@ -49,12 +51,14 @@ with open(filename,'r') as csv_file:
 			star = tmp_star.span.text
 			print(star)
 		
-			f.write(title + "," +brand + "," +star.replace(",",".") +"," +review.replace(","," ") +"\n")
+			f.write("\t".join([title, brand, star.replace(",","."), review.replace("\n","") + "\n"]))
 			sum = sum + 1
 			print("sum",sum)
 			
 			
-		time.sleep(60)
+		time.sleep(10)
 		
 	f.close()
+
+	
 	
