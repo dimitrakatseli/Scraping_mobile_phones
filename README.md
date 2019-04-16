@@ -8,3 +8,12 @@ python3 Skroutz_items.py
 
 Example results
 ![results](https://user-images.githubusercontent.com/22845560/55962494-ac1eab00-5c79-11e9-9cd1-4247a3cc0703.png)
+
+
+To get the reviews run 
+python3 skroutz_reviews.py
+
+
+Example review
+![review](https://user-images.githubusercontent.com/22845560/56246800-b1318f00-60ab-11e9-8be6-d5dfbd7f5ad5.png)
+
